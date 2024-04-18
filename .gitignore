@@ -13,6 +13,9 @@
 /.next/
 /out/
 
+# Assets
+/public/assets/avatar.jpg
+
 # production
 /build
 
