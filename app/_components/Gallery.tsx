@@ -6,70 +6,70 @@ export const Gallery = () => {
     <Section className="flex justify-center">
       <div className="grid md:grid-cols-3 gap-4 w-full">
         <div className="grid gap-4">
-          <div>
+          <div className="rounded-lg overflow-hidden">
             <img
-              className="h-auto w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+              className="h-auto w-full rounded-lg transition-transform duration-300 hover:scale-110"
+              src="./assets/gallery/1.jpg"
               alt=""
             />
           </div>
-          <div>
+          <div className="rounded-lg overflow-hidden">
             <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+              className="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-110"
+              src="./assets/gallery/2.jpg"
               alt=""
             />
           </div>
-          <div>
+          <div className="rounded-lg overflow-hidden">
             <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="grid gap-4">
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+              className="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-110"
+              src="./assets/gallery/3.jpg"
               alt=""
             />
           </div>
         </div>
         <div className="grid gap-4">
-          <div>
+          <div className="rounded-lg overflow-hidden">
             <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
+              className="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-110"
+              src="./assets/gallery/4.jpg"
               alt=""
             />
           </div>
-          <div>
+          <div className="rounded-lg overflow-hidden">
             <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
+              className="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-110"
+              src="./assets/gallery/5.jpg"
               alt=""
             />
           </div>
-          <div>
+          <div className="rounded-lg overflow-hidden">
             <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
+              className="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-110"
+              src="./assets/gallery/6.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="grid gap-4">
+          <div className="rounded-lg overflow-hidden">
+            <img
+              className="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-110"
+              src="./assets/gallery/7.JPG"
+              alt=""
+            />
+          </div>
+          <div className="rounded-lg overflow-hidden">
+            <img
+              className="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-110"
+              src="./assets/gallery/8.JPG"
+              alt=""
+            />
+          </div>
+          <div className="rounded-lg overflow-hidden">
+            <img
+              className="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-110"
+              src="./assets/gallery/9.jpg"
               alt=""
             />
           </div>

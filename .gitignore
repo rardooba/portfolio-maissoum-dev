@@ -15,6 +15,7 @@
 
 # Assets
 /public/assets/avatar.jpg
+/public/assets/gallery
 
 # production
 /build
