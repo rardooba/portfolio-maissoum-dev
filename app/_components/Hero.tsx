@@ -20,13 +20,6 @@ export const Hero = () => {
   return (
     <Section className="flex max-md:flex-col items-center gap-6">
       <Glitch />
-      {/* <div className="flex-[2] max-md:m-auto mr-auto relative -z-50">
-        <img
-          src="./assets/avatar.jpg"
-          alt="Maïssoum's picture"
-          className="w-full h-auto rounded-full max-md:w-50 grayscale contrast-125"
-        />
-      </div> */}
       <div className="flex-[3] w-full flex flex-col gap-2">
         <h2 className="font-caption text-5xl text-primary font-bold flex gap-2">
           🦄 <TitleEncrypt />
@@ -137,7 +130,8 @@ export const Hero = () => {
               Dev.co
             </Code>
           </Link>
-          . <br/>Ready to bring digital visions to life! ✨
+          . <br />
+          Ready to bring digital visions to life! ✨
         </p>
         <div>
           <Magnetic>

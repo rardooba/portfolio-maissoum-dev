@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import { Card } from "@/components/ui/card";
 import { Section } from "./Section";
-import { Code, Home, MessageCircle, Rss, StickyNote } from "lucide-react";
+import { Code, MessageCircle, Rss, StickyNote } from "lucide-react";
 import { SideProject, SideProjectProps } from "./SideProject";
 import { ContactCard } from "./ContactCard";
 import { Work, WorkProps } from "./Work";
 
-export const StatusSection = () => {
+export const ProjectSection = () => {
   return (
     <Section className="flex max-md:flex-col items-start gap-6">
       <div className="flex-[3] w-full">

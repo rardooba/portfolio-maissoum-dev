@@ -5,6 +5,7 @@ import { Code } from "./Code";
 import { TailwindLogo } from "./icons/TailwindLogo";
 import { NextLogo } from "./icons/NextLogo";
 import { JavascriptLogo } from "./icons/JavascriptLogo";
+import { SiJavascript, SiReact, SiTailwindcss } from "react-icons/si";
 
 export const Skills = () => {
   return (
@@ -21,7 +22,20 @@ export const Skills = () => {
             Javascript ES+
           </h3>
           <p className="text-sm text-muted-foreground">
-            My main library is <Code>React</Code>. I also
+            My main library is{" "}
+            <Code
+              className="inline-flex items-center gap-1"
+              title={
+                <>
+                  <SiJavascript className="inline" /> Javascript
+                </>
+              }
+              description="blabla"
+            >
+              <SiJavascript className="inline" />
+              Javascript
+            </Code>
+            . I also
           </p>
         </div>
         <div className="flex flex-col gap-2 flex-1">
@@ -33,7 +47,20 @@ export const Skills = () => {
 
           <h3 className="text-2xl font-semibold tracking-tight">React</h3>
           <p className="text-sm text-muted-foreground">
-            My main library is <Code>React</Code>. I also
+            My main library is{" "}
+            <Code
+              className="inline-flex items-center gap-1"
+              title={
+                <>
+                  <SiReact className="inline" /> React
+                </>
+              }
+              description="blabla"
+            >
+              <SiReact className="inline" />
+              React
+            </Code>
+            . I also
           </p>
         </div>
         <div className="flex flex-col gap-2 flex-1">
@@ -44,7 +71,19 @@ export const Skills = () => {
           </h3>
           <p className="text-sm text-muted-foreground">
             I can create <u>beautiful</u> application <i>in second</i> using{" "}
-            <Code>Tailwind CSS.</Code>.
+            <Code
+              className="inline-flex items-center gap-1"
+              title={
+                <>
+                  <SiTailwindcss className="inline" /> Tailwind Css
+                </>
+              }
+              description="blabla"
+            >
+              <SiTailwindcss className="inline" />
+              Tailwind Css
+            </Code>
+            .
           </p>
         </div>
         <div className="flex flex-col gap-2 flex-1">

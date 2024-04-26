@@ -1,11 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 
 const LogoAnimation: React.FC = () => {
   const buttonRef = useRef<HTMLImageElement>(null);
-  const buttonWidth = 350;
-  const maxWidth = window.innerWidth - buttonWidth;
+  const [maxWidth, setMaxWidth] = useState<number>(0);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
+        const newMaxWidth = window.innerWidth - 350;
+        setMaxWidth(newMaxWidth);
+      };
+
+      window.addEventListener('resize', handleResize);
+      handleResize(); // Appel initial pour définir la largeur maximale
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
 
   useEffect(() => {
     const button = buttonRef.current;
