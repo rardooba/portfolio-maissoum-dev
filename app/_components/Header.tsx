@@ -12,18 +12,15 @@ import {
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import Magnetic from "./Magnetic";
+import LogoAnimation from "./LogoAnimation";
+
 
 export const Header = () => {
+ 
   return (
-    <header className="sticky top-0 backdrop-blur-sm backdrop-grayscale z-30">
+    <header className="sticky top-0 backdrop-blur-sm backdrop-grayscale z-30 hover:cursor-grab active:cursor-grabbing">
       <Section className="flex item-baseline py-4">
-        <Link href="/">
-          <img
-            src="./assets/logo.jpg"
-            alt="Maïssoum logo"
-            className="w-10 h-10 rounded-full object-contain transition-transform hover:scale-75"
-          />
-        </Link>
+      <LogoAnimation/>
         <div className="flex-1" />
         <ul className="flex items-center gap-2">
           <Magnetic>

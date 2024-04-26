@@ -16,6 +16,7 @@
 # Assets
 /public/assets/avatar.jpg
 /public/assets/gallery
+/public/assets/glitch
 
 # production
 /build

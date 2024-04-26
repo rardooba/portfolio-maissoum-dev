@@ -53,7 +53,7 @@ const TitleEncrypt: React.FC = () => {
       }}
       onMouseEnter={scramble}
       onMouseLeave={stopScramble}
-      className="relative transition-colors hover:text-violet-500 cursor-pointer"
+      className="relative transition-colors hover:text-primary cursor-pointer"
     >
       {text}
     </motion.div>

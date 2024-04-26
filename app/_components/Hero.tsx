@@ -2,23 +2,31 @@
 import { Section } from "./Section";
 import { Code } from "./Code";
 
-import { SiYoutubeshorts } from "react-icons/si";
+import {
+  SiYoutubeshorts,
+  SiNextdotjs,
+  SiReact,
+  SiTypescript,
+} from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 import { FaDev, FaFilePdf } from "react-icons/fa6";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Magnetic from "./Magnetic";
 import TitleEncrypt from "./TitleEncrypt";
+import Glitch from "./Glitch";
 
 export const Hero = () => {
   return (
     <Section className="flex max-md:flex-col items-center gap-6">
-      <div className="flex-[2] max-md:m-auto mr-auto relative -z-50">
+      <Glitch />
+      {/* <div className="flex-[2] max-md:m-auto mr-auto relative -z-50">
         <img
           src="./assets/avatar.jpg"
           alt="Maïssoum's picture"
           className="w-full h-auto rounded-full max-md:w-50 grayscale contrast-125"
         />
-      </div>
+      </div> */}
       <div className="flex-[3] w-full flex flex-col gap-2">
         <h2 className="font-caption text-5xl text-primary font-bold flex gap-2">
           🦄 <TitleEncrypt />
@@ -26,9 +34,88 @@ export const Hero = () => {
 
         <h3 className="text-3xl font-caption">Craftman Software & artist</h3>
         <p className="text-base">
-          I love creating content on{" "}
+          Based in{" "}
           <Link href="#">
-            <Code className="inline-flex items-center gap-1">
+            <Code
+              className="inline-flex items-center gap-1"
+              title={<>🇫🇷 France</>}
+              description="blabla"
+            >
+              <span className="inline">🇫🇷</span>France
+            </Code>
+          </Link>
+          , with 10 years of web experience, I specialize in{" "}
+          <Link href="#">
+            <Code
+              className="inline-flex items-center gap-1"
+              title={
+                <>
+                  <SiNextdotjs className="inline" /> Nextjs
+                </>
+              }
+              description="blabla"
+            >
+              <SiNextdotjs className="inline" />
+              Nextjs
+            </Code>
+          </Link>{" "}
+          and{" "}
+          <Link href="#">
+            <Code
+              className="inline-flex items-center gap-1"
+              title={
+                <>
+                  <SiReact className="inline" /> React
+                </>
+              }
+              description="blabla"
+            >
+              <SiReact className="inline" />
+              React
+            </Code>
+          </Link>
+          , focusing on front-end development and web design. Skilled in{" "}
+          <Link href="#">
+            <Code
+              className="inline-flex items-center gap-1"
+              title={
+                <>
+                  <SiTypescript className="inline" /> TypeScript
+                </>
+              }
+              description="blabla"
+            >
+              <SiTypescript className="inline" />
+              TypeScript
+            </Code>
+          </Link>{" "}
+          and{" "}
+          <Link href="#">
+            <Code
+              className="inline-flex items-center gap-1"
+              title={
+                <>
+                  <BiLogoPostgresql className="inline" /> PostgreSQL
+                </>
+              }
+              description="blabla"
+            >
+              <BiLogoPostgresql className="inline" />
+              PostgreSQL
+            </Code>
+          </Link>
+          . I love creating content on{" "}
+          <Link href="#">
+            <Code
+              className="inline-flex items-center gap-1"
+              title={
+                <>
+                  <SiYoutubeshorts className="inline" />
+                  Youtube
+                </>
+              }
+              description="Blabla"
+            >
               <SiYoutubeshorts className="inline" />
               Youtube
             </Code>
@@ -36,16 +123,21 @@ export const Hero = () => {
           , currently working at home on my sides project. Sometime I write an
           article on{" "}
           <Link href="#">
-            <Code className="inline-flex items-center gap-1">
+            <Code
+              className="inline-flex items-center gap-1"
+              title={
+                <>
+                  <FaDev className="inline" />
+                  Dev.co
+                </>
+              }
+              description="Blabla"
+            >
               <FaDev className="inline" />
               Dev.co
             </Code>
           </Link>
-          . Living in{" "}
-          <Code className="inline-flex items-center gap-1">
-            <span className="inline">🇫🇷</span>France
-          </Code>
-          .
+          . <br/>Ready to bring digital visions to life! ✨
         </p>
         <div>
           <Magnetic>

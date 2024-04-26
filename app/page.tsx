@@ -9,6 +9,7 @@ import { Footer } from "./_components/Footer";
 import { Gallery } from "./_components/Gallery";
 import { Partners } from "./_components/Partners";
 import { motion, useScroll } from "framer-motion";
+import Glitch from "./_components/Glitch"
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
