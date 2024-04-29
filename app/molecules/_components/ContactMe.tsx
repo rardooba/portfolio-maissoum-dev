@@ -1,17 +1,34 @@
 import { Badge } from "@/components/ui/badge";
-import { Section } from "./Section";
-import { ReactLogo } from "./icons/ReactLogo";
-import { Code } from "./Code";
-import { TailwindLogo } from "./icons/TailwindLogo";
-import { NextLogo } from "./icons/NextLogo";
-import { ContactCard } from "./ContactCard";
+import { Section } from "../../organisms/_components/Section";
+import { ContactCard } from "../../atoms/_components/ContactCard";
+import { useRef, useState } from "react";
 
 export const ContactMe = () => {
+  const [emoIndex, setEmoIndex] = useState(0);
+  const ref = useRef<HTMLHeadingElement>(null);
+  const getEmoji = () => {
+    const emojis = ["😜", "🤓", "😘", "🤭", "🥱", "😴", "😵", "🤢", "🤮", "😡"];
+
+    let btn = ref.current;
+    console.log();
+    if (btn) {
+      if (emoIndex < emojis.length) {
+        btn.innerText = `I will be happy to work with you ${emojis[emoIndex]}`;
+        setEmoIndex((prev) => prev + 1);
+      } else {
+        setEmoIndex(0);
+      }
+    }
+  };
   return (
     <Section className="flex flex-col items-start gap-4">
       <Badge variant="outline">Contact me.</Badge>
-      <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-        I will be happy to work with you 🥰
+      <h2
+        className="pb-2 text-3xl font-semibold tracking-tight first:mt-0 cursor-pointer"
+        ref={ref}
+        onMouseEnter={getEmoji}
+      >
+        I will be happy to work with you <span>🥰</span>
       </h2>
       <div className="flex max-md:flex-col gap-4 w-full">
         <ContactCard

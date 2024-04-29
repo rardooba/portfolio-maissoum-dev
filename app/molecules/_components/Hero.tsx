@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import { Section } from "./Section";
-import { Code } from "./Code";
+import { Section } from "../../organisms/_components/Section";
+import { Code } from "../../atoms/_components/Code";
 
 import {
   SiYoutubeshorts,
@@ -12,14 +12,14 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { FaDev, FaFilePdf } from "react-icons/fa6";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import Magnetic from "./Magnetic";
-import TitleEncrypt from "./TitleEncrypt";
-import Glitch from "./Glitch";
+import Magnetic from "../../atoms/_components/Magnetic";
+import TitleEncrypt from "../../atoms/_components/TitleEncrypt";
+import GlitchAvatar from "../../atoms/_components/GlitchAvatar";
 
 export const Hero = () => {
   return (
     <Section className="flex max-md:flex-col items-center gap-6">
-      <Glitch />
+      <GlitchAvatar />
       <div className="flex-[3] w-full flex flex-col gap-2">
         <h2 className="font-caption text-5xl text-primary font-bold flex gap-2">
           🦄 <TitleEncrypt />

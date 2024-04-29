@@ -1,10 +1,10 @@
 import { Badge } from "@/components/ui/badge";
-import { Section } from "./Section";
-import { ReactLogo } from "./icons/ReactLogo";
-import { Code } from "./Code";
-import { TailwindLogo } from "./icons/TailwindLogo";
-import { NextLogo } from "./icons/NextLogo";
-import { JavascriptLogo } from "./icons/JavascriptLogo";
+import { Section } from "../../organisms/_components/Section";
+import { ReactLogo } from "../../atoms/_components/icons/ReactLogo";
+import { Code } from "../../atoms/_components/Code";
+import { TailwindLogo } from "../../atoms/_components/icons/TailwindLogo";
+import { NextLogo } from "../../atoms/_components/icons/NextLogo";
+import { JavascriptLogo } from "../../atoms/_components/icons/JavascriptLogo";
 import { SiJavascript, SiReact, SiTailwindcss } from "react-icons/si";
 
 export const Skills = () => {

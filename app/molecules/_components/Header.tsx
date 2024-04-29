@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { buttonVariants } from "@/components/ui/button";
-import { Section } from "./Section";
+import { Section } from "../../organisms/_components/Section";
 import {
   FaGithub,
   FaBehance,
@@ -11,16 +11,14 @@ import {
 
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import Magnetic from "./Magnetic";
-import LogoAnimation from "./LogoAnimation";
-
+import Magnetic from "../../atoms/_components/Magnetic";
+import LogoAnimation from "../../atoms/_components/LogoAnimation";
 
 export const Header = () => {
- 
   return (
     <header className="sticky top-0 backdrop-blur-sm backdrop-grayscale z-30 hover:cursor-grab active:cursor-grabbing">
       <Section className="flex item-baseline py-4">
-      <LogoAnimation/>
+        <LogoAnimation />
         <div className="flex-1" />
         <ul className="flex items-center gap-2">
           <Magnetic>

@@ -1,4 +1,4 @@
-import { Section } from "./Section";
+import { Section } from "../../organisms/_components/Section";
 
 export const Footer = () => {
   return (

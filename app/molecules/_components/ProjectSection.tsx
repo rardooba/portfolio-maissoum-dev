@@ -1,10 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import { Card } from "@/components/ui/card";
-import { Section } from "./Section";
+import { Section } from "../../organisms/_components/Section";
 import { Code, MessageCircle, Rss, StickyNote } from "lucide-react";
-import { SideProject, SideProjectProps } from "./SideProject";
-import { ContactCard } from "./ContactCard";
-import { Work, WorkProps } from "./Work";
+import {
+  SideProject,
+  SideProjectProps,
+} from "../../atoms/_components/SideProject";
+import { ContactCard } from "../../atoms/_components/ContactCard";
+import { Work, WorkProps } from "../../atoms/_components/Work";
 
 export const ProjectSection = () => {
   return (

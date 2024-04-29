@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { Badge } from "@/components/ui/badge";
-import { Section } from "./Section";
+import { Section } from "../../organisms/_components/Section";
 import Link from "next/link";
-import Magnetic from "./Magnetic";
+import Magnetic from "../../atoms/_components/Magnetic";
 
 export const Partners = () => {
   return (
