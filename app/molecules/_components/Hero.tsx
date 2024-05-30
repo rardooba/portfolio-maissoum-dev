@@ -9,7 +9,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { FaDev, FaFilePdf } from "react-icons/fa6";
+import { FaDev, FaFilePdf, FaHeadset } from "react-icons/fa6";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Magnetic from "../../atoms/_components/Magnetic";
@@ -133,11 +133,19 @@ export const Hero = () => {
           . <br />
           Ready to bring digital visions to life! ✨
         </p>
-        <div>
+        <div className="flex gap-4">
           <Magnetic>
             <Button className="flex gap-2 hover:bg-red-600">
               <FaFilePdf className="inline" />
               my CV.
+            </Button>
+          </Magnetic>
+          <Magnetic>
+            <Button asChild className="flex gap-2 hover:bg-red-600">
+              <a href="#callme">
+                <FaHeadset className="inline" />
+                Schedule a call
+              </a>
             </Button>
           </Magnetic>
         </div>

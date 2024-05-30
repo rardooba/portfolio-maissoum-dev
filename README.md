@@ -1,11 +1,10 @@
-# Combosss
+# Portfolio Collaborator
 
-> Outline a brief description of your project.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+Welcome to my portfolio, a space dedicated to my future collaborators wishing to share their most ambitious projects with an Amazigh unicorn software engineer.
 
 ## Table of Contents
 
-- [General Info](#general-information)
+- [General Information](#general-information)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Screenshots](#screenshots)
@@ -15,81 +14,88 @@
 - [Room for Improvement](#room-for-improvement)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
-<!-- * [License](#license) -->
 
 ## General Information
 
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- **Objective:** This portfolio was created to showcase my expertise as a software engineer specializing in Next.js. My goal is to attract clients as a freelancer, but I am also open to job opportunities within startups, consulting firms, scaleups, or unicorns.
+- **Expertise:** I offer fullstack expertise for creating responsive desktop web applications, with a particular focus on performance and user experience.
+- **Experience:** With 10 years of experience as a web designer and one year as a JavaScript developer specializing in React and Next.js, I combine creative design skills with advanced technical expertise.
+- **Projects:** I have worked on various projects ranging from small independent applications to complex platforms, allowing me to develop a deep understanding of the diverse needs of clients and end-users.
+- **Innovation:** Passionate about innovation, I constantly seek to integrate the latest technologies and methodologies to optimize development processes and deliver superior quality solutions.
+- **Collaboration:** I value teamwork and collaboration, striving to integrate into dynamic environments where I can make significant contributions and learn from other professionals.
+- **Motivation:** My atypical background, transitioning from design to programming, gives me a unique perspective for tackling technical and creative challenges, making me a versatile and adaptable candidate.
+
+Explore my portfolio to discover examples of my work, and feel free to contact me to discuss your projects or collaboration opportunities.
+
 
 ## Technologies Used
 
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- **Next.js** - version 14.2.2
+- **React** - version 18
+- **Tailwind CSS** - version 3.4.1
+- **Framer Motion** - version 11.1.7
+- **GSAP** - version 3.12.5
+- **Geist UI** - version 1.3.0
+- **Lucide React** - version 0.371.0
+- **Next third-parties** - version 14.2.3
 
 ## Features
 
-List the ready features here:
-
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+- Presentation of projects and skills.
+- Modern, minimalist, and responsive user interface.
+- Smooth and interactive animations for a better user experience.
+- Contact option for direct collaboration.
 
 ## Screenshots
 
-![Example screenshot](./img/screenshot.png)
-
-<!-- If you have screenshots you'd like to share, include them here. -->
+![Capture d'écran du portfolio](./img/screenshot.png)
 
 ## Setup
 
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+**Prerequisites:**  
+- Node.js
+- npm (or yarn)
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+**Installation:**
+1. Clone the repository: `git clone https://github.com/your-username/portfolio-collaborator.git`
+2. Navigate to the directory: `cd portfolio-collaborator`
+3. Install the dependencies: `npm install`
 
 ## Usage
 
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
+To start the application locally:
+```bash
+npm run dev
+```
+To build the project for production:
+```bash
+npm run build
+```
+To launch the production server:
+```bash
+npm start
+```
 
 ## Project Status
 
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+The project is: _in progress_.
 
 ## Room for Improvement
 
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
+Possible improvements:
+- Add a blog section to share technical articles.
+- Integrate a Caledly frame for scheduling appointments.
 
-Room for improvement:
-
-- Improvement to be done 1
-- Improvement to be done 2
-
-To do:
-
-- Feature to be added 1
-- Feature to be added 2
+To-do:
+- Performance optimization.
+- Unit and integration tests.
 
 ## Acknowledgements
 
-Give credit here.
-
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+- This project is inspired by renowned developers' portfolios.
+- Thanks to @Melvynx for your YouTube video that motivated the creation of this portfolio.
+- Thanks to open source contributors for their incredible libraries and tools.
 
 ## Contact
 
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+Created by Maïssoum Aboudrare - feel free to contact me for any collaboration or questions!

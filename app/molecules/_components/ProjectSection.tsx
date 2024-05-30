@@ -6,7 +6,7 @@ import {
   SideProject,
   SideProjectProps,
 } from "../../atoms/_components/SideProject";
-import { ContactCard } from "../../atoms/_components/ContactCard";
+// import { ContactCard } from "../../atoms/_components/ContactCard";
 import { Work, WorkProps } from "../../atoms/_components/Work";
 
 export const ProjectSection = () => {
@@ -39,7 +39,7 @@ export const ProjectSection = () => {
             ))}
           </div>
         </Card>
-        <Card className="p-4 flex-1 flex flex-col gap-2">
+        {/* <Card className="p-4 flex-1 flex flex-col gap-2">
           <p className="text-lg text-muted-foreground uppercase">Contact me.</p>
           <ContactCard
             url="/"
@@ -55,7 +55,7 @@ export const ProjectSection = () => {
             mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"
             description="+3'000"
           />
-        </Card>
+        </Card> */}
       </div>
     </Section>
   );
@@ -111,5 +111,21 @@ const WORKS: WorkProps[] = [
     date: "2009 - 2017",
     url: "/",
     freelance: true,
+  },
+  {
+    image:
+      "https://media.licdn.com/dms/image/C4E0BAQFS8xQa957hUA/company-logo_100_100/0/1677256019498?e=1721260800&v=beta&t=FFoSKz0V2SZtEXj1old7mQEoUgDrIYWXAPJhqu0PPdA",
+    title: "Imiximik",
+    role: "Freelancer DA.",
+    date: "2009 - 2017",
+    url: "/",
+  },
+  {
+    image:
+      "https://media.licdn.com/dms/image/C4E0BAQFS8xQa957hUA/company-logo_100_100/0/1677256019498?e=1721260800&v=beta&t=FFoSKz0V2SZtEXj1old7mQEoUgDrIYWXAPJhqu0PPdA",
+    title: "Imiximik",
+    role: "Freelancer DA.",
+    date: "2009 - 2017",
+    url: "/",
   },
 ];

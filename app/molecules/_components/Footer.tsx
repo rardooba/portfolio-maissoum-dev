@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer className="bg-card">
       <Section className="py-8">
         <p className="text-muted-foreground text-sm">
-          ©Copyrigth 2024 Maïssoum Aboudrare
+          © {new Date().getFullYear()} Maïssoum Aboudrare. All right reserved.
         </p>
       </Section>
     </footer>
