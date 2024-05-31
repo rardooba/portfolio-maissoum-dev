@@ -1,3 +1,4 @@
+"use client"
 import { Section } from "../../organisms/_components/Section";
 
 export const Footer = () => {

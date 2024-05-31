@@ -22,7 +22,7 @@ export const Code = ({
       <HoverCardTrigger asChild>
         <span
           className={cn(
-            "bg-accent/30 hover:bg-accent/80 transition-colors border border-accent rounded-sm px-1 py-0.5 font-mono text-primary cursor-zoom-in",
+            "item-center mt-0.5 md:mt-0.5 bg-accent/30 hover:bg-accent/80 transition-colors border border-accent rounded-sm px-1 py-0.5 font-mono text-primary cursor-default",
             className
           )}
           {...props}

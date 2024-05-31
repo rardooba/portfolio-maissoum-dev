@@ -1,3 +1,4 @@
+"use client"
 /* eslint-disable @next/next/no-img-element */
 import { Badge } from "@/components/ui/badge";
 import { Section } from "../../organisms/_components/Section";
@@ -8,7 +9,7 @@ export const Partners = () => {
   return (
     <Section className="flex flex-col items-start gap-4">
       <Badge variant="outline">Partners</Badge>
-      <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+      <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0 cursor-default">
         My funny clients 🤝
       </h2>
       <div className="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 dark:text-gray-400">

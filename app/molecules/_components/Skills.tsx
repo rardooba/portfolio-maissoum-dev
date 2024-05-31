@@ -1,3 +1,4 @@
+"use client"
 import { Badge } from "@/components/ui/badge";
 import { Section } from "../../organisms/_components/Section";
 import { ReactLogo } from "../../atoms/_components/icons/ReactLogo";
@@ -11,7 +12,7 @@ export const Skills = () => {
   return (
     <Section className="flex flex-col items-start gap-4">
       <Badge variant="outline">Skills</Badge>
-      <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+      <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0 cursor-default">
         I love working on...
       </h2>
       <div className="flex max-md:flex-col gap-4">
@@ -22,7 +23,7 @@ export const Skills = () => {
             Javascript ES+
           </h3>
           <p className="text-sm text-muted-foreground">
-            My main library is{" "}
+          My preferred programming language is{" "}
             <Code
               className="inline-flex items-center gap-1"
               title={
@@ -35,7 +36,7 @@ export const Skills = () => {
               <SiJavascript className="inline" />
               Javascript
             </Code>
-            . I also
+            .
           </p>
         </div>
         <div className="flex flex-col gap-2 flex-1">
@@ -47,20 +48,7 @@ export const Skills = () => {
 
           <h3 className="text-2xl font-semibold tracking-tight">React</h3>
           <p className="text-sm text-muted-foreground">
-            My main library is{" "}
-            <Code
-              className="inline-flex items-center gap-1"
-              title={
-                <>
-                  <SiReact className="inline" /> React
-                </>
-              }
-              description="blabla"
-            >
-              <SiReact className="inline" />
-              React
-            </Code>
-            . I also
+            My main library is <b>React</b>. I appreciate React for its flexibility and ease of integration.
           </p>
         </div>
         <div className="flex flex-col gap-2 flex-1">
@@ -70,7 +58,7 @@ export const Skills = () => {
             Tailwind CSS
           </h3>
           <p className="text-sm text-muted-foreground">
-            I can create <u>beautiful</u> application <i>in second</i> using{" "}
+          I quickly prototype using{" "}
             <Code
               className="inline-flex items-center gap-1"
               title={
@@ -83,7 +71,7 @@ export const Skills = () => {
               <SiTailwindcss className="inline" />
               Tailwind Css
             </Code>
-            .
+            , demonstrating my efficiency in creating <i>responsive</i>, visually appealing designs.
           </p>
         </div>
         <div className="flex flex-col gap-2 flex-1">
@@ -91,8 +79,7 @@ export const Skills = () => {
 
           <h3 className="text-2xl font-semibold tracking-tight">Next.js</h3>
           <p className="text-sm text-muted-foreground">
-            I am an expert to implement Next in your application and create a
-            perfect <u>user experience.</u>
+          I implement Next.js in all my applications to ensure a smooth and perfect <u>user experience</u>.
           </p>
         </div>
       </div>

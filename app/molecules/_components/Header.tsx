@@ -1,10 +1,11 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
 import { buttonVariants } from "@/components/ui/button";
 import { Section } from "../../organisms/_components/Section";
 import {
   FaGithub,
   FaBehance,
-  FaXTwitter,
+  FaThreads,
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa6";
@@ -13,13 +14,17 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import Magnetic from "../../atoms/_components/Magnetic";
 import LogoAnimation from "../../atoms/_components/LogoAnimation";
+import AudioPlayer from "@/app/atoms/_components/AudioPlayer";
 
 export const Header = () => {
   return (
     <header className="sticky top-0 backdrop-blur-sm backdrop-grayscale z-30 hover:cursor-grab active:cursor-grabbing">
-      <Section className="flex item-baseline py-4">
+      <Section className="flex item-baseline pt-4 pb-[1.35rem]">
         <LogoAnimation />
-        <div className="flex-1" />
+
+        <div className="flex-1">
+          <AudioPlayer src="./assets/playlist/audio.mp3" />
+        </div>
         <ul className="flex items-center gap-2">
           <Magnetic>
             <Link
@@ -27,7 +32,7 @@ export const Header = () => {
                 buttonVariants({ variant: "outline" }),
                 "size-6 p-0 text-lg"
               )}
-              href="http://github.com/rardooba"
+              href="https://github.com/rardooba"
             >
               <FaGithub />
             </Link>
@@ -38,7 +43,7 @@ export const Header = () => {
                 buttonVariants({ variant: "outline" }),
                 "size-6 p-0 text-lg"
               )}
-              href="http://github.com/rardooba"
+              href="https://arttocode.fr/"
             >
               <FaBehance />
             </Link>
@@ -49,9 +54,9 @@ export const Header = () => {
                 buttonVariants({ variant: "outline" }),
                 "size-6 p-0 text-lg"
               )}
-              href="http://github.com/rardooba"
+              href="https://www.threads.net/@maissoum.dev"
             >
-              <FaXTwitter />
+              <FaThreads />
             </Link>
           </Magnetic>
           <Magnetic>
@@ -60,7 +65,7 @@ export const Header = () => {
                 buttonVariants({ variant: "outline" }),
                 "size-6 p-0 text-lg"
               )}
-              href="http://github.com/rardooba"
+              href="https://www.instagram.com/maissoum.dev"
             >
               <FaInstagram />
             </Link>
@@ -71,7 +76,7 @@ export const Header = () => {
                 buttonVariants({ variant: "outline" }),
                 "size-6 p-0 text-lg"
               )}
-              href="http://github.com/rardooba"
+              href="https://www.linkedin.com/in/maissoum-aboudrare"
             >
               <FaLinkedinIn />
             </Link>

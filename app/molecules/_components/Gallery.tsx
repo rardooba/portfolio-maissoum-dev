@@ -1,3 +1,4 @@
+"use client"
 /* eslint-disable @next/next/no-img-element */
 import { Section } from "../../organisms/_components/Section";
 

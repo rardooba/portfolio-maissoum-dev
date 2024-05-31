@@ -1,3 +1,4 @@
+"use client"
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
@@ -14,7 +15,7 @@ export const Work = (props: WorkProps) => {
   return (
     <Link
       href={props.url}
-      className="inline-flex items-center gap-4 hover:bg-accent/80 transition-colors rounded p-1"
+      className="inline-flex items-center gap-4 hover:bg-accent/80 transition-colors rounded p-1 cursor-default"
     >
       <img
         src={props.image}

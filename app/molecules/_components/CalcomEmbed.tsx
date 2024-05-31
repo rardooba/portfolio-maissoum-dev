@@ -15,7 +15,7 @@ export function CalcomEmbed() {
   }, []);
   return (
     <Cal
-      calLink="rardooba/30min"
+      calLink="maissoum/callme"
       style={{ width: "100%", height: "100%", overflowY: "hidden" }}
       config={{ layout: "month_view" }}
     />
