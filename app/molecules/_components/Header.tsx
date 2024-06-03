@@ -33,6 +33,7 @@ export const Header = () => {
                 "size-6 p-0 text-lg"
               )}
               href="https://github.com/rardooba"
+              target="_blank"
             >
               <FaGithub />
             </Link>
@@ -43,7 +44,8 @@ export const Header = () => {
                 buttonVariants({ variant: "outline" }),
                 "size-6 p-0 text-lg"
               )}
-              href="https://arttocode.fr/"
+              href="https://www.behance.net/art-to-code"
+              target="_blank"
             >
               <FaBehance />
             </Link>
@@ -55,6 +57,7 @@ export const Header = () => {
                 "size-6 p-0 text-lg"
               )}
               href="https://www.threads.net/@maissoum.dev"
+              target="_blank"
             >
               <FaThreads />
             </Link>
@@ -66,6 +69,7 @@ export const Header = () => {
                 "size-6 p-0 text-lg"
               )}
               href="https://www.instagram.com/maissoum.dev"
+              target="_blank"
             >
               <FaInstagram />
             </Link>
@@ -77,6 +81,7 @@ export const Header = () => {
                 "size-6 p-0 text-lg"
               )}
               href="https://www.linkedin.com/in/maissoum-aboudrare"
+              target="_blank"
             >
               <FaLinkedinIn />
             </Link>

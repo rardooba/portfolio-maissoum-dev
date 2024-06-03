@@ -16,6 +16,7 @@ export const Work = (props: WorkProps) => {
     <Link
       href={props.url}
       className="inline-flex items-center gap-4 hover:bg-accent/80 transition-colors rounded p-1 cursor-default"
+      target="_blank"
     >
       <img
         src={props.image}

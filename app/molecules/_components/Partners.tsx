@@ -15,7 +15,7 @@ export const Partners = () => {
       <div className="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 dark:text-gray-400">
         {PARTNERS.map((partner, index) => (
           <Magnetic key={index}>
-            <Link href="#" className="flex justify-center items-center">
+            <Link href={partner.url} target="_blank" className="flex justify-center items-center">
               <img
                 className="h-20 grayscale hover:grayscale-0 object-contain"
                 src={partner.src}

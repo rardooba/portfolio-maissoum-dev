@@ -14,7 +14,7 @@ type ContactCardProps = {
 };
 export const ContactCard = (props: ContactCardProps) => {
   return (
-    <Link href={props.url} className={cn("w-full", props.className)}>
+    <Link href={props.url} target="_blank" className={cn("w-full", props.className)}>
       <Card className="p-3 bg-accent/10 hover:bg-accent/80 transition-colors group flex items-center gap-4">
         <div className="relative w-10 h-10">
           <img
