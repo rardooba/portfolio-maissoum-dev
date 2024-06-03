@@ -42,7 +42,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ src }) => {
   };
 
   return (
-    <div className="flex flex-col items-start">
+    <div className="flex-col hidden items-start sm:flex">
       <audio ref={audioRef} src={src} />
       <div className="flex items-center justify-center space-x-4">
         <button onClick={togglePlay} className="focus:outline-none text-2xl">

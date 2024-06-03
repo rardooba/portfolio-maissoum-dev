@@ -13,13 +13,6 @@
 /.next/
 /out/
 
-# Assets
-/public/assets/avatar.jpg
-/public/assets/gallery
-/public/assets/glitch
-/public/assets/contact
-/public/assets/clients
-
 # production
 /build
 

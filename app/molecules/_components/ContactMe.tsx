@@ -41,7 +41,7 @@ export const ContactMe = () => {
           className="flex-1 cursor-default"
           url="https://www.linkedin.com/in/maissoum-aboudrare"
           name="Maïssoum.A"
-          image="https://media.licdn.com/dms/image/C4E03AQE_zbpU8wOhGQ/profile-displayphoto-shrink_400_400/0/1621109832517?e=1718841600&v=beta&t=KowsdyeHbSNCBzsOfh3YrcJka4ggkENJxoVfRCCcftg"
+          image="https://media.licdn.com/dms/image/D4E35AQHuGqXgXcjEsg/profile-framedphoto-shrink_400_400/0/1717399397665?e=1718017200&v=beta&t=49ipyGeL3tD3IryKeqSW4p_83wRMeWScTUYmDhJx4OU"
           mediumImage="https://static.vecteezy.com/system/resources/previews/023/986/970/original/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png"
           description="+1'000"
         />

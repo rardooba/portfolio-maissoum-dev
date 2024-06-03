@@ -16,6 +16,7 @@ export function CalcomEmbed() {
   return (
     <Cal
       calLink="maissoum/callme"
+      className="md:mt-0"
       style={{ width: "100%", height: "100%", overflowY: "hidden" }}
       config={{ layout: "month_view" }}
     />

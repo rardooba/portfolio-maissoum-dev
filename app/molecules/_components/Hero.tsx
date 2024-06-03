@@ -163,9 +163,11 @@ export const Hero = () => {
         </p>
         <div className="flex gap-4">
           <Magnetic>
-            <Button className="flex gap-2 hover:bg-red-600 cursor-default">
+            <Button asChild className="flex gap-2 hover:bg-red-600 cursor-default">
+            <a href="./assets/cv/cv-maissoum-aboudrare-dev-js.pdf" target="_blank">
               <FaFilePdf className="inline" />
               my CV.
+            </a>
             </Button>
           </Magnetic>
           <Magnetic>
