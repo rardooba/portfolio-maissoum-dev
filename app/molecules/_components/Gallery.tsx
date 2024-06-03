@@ -11,21 +11,21 @@ export const Gallery = () => {
             <img
               className="h-auto w-full rounded-lg transition-transform duration-300 hover:scale-110"
               src="./assets/gallery/1.jpg"
-              alt=""
+              alt="Temple majestueux au cœur de la steppe mongole"
             />
           </div>
           <div className="rounded-lg overflow-hidden">
             <img
               className="h-auto w-full rounded-lg transition-transform duration-300 hover:scale-110"
               src="./assets/gallery/2.jpg"
-              alt=""
+              alt="Silhouette admirant le lever de soleil depuis le sommet du mont Agung à Bali"
             />
           </div>
           <div className="rounded-lg overflow-hidden">
             <img
               className="h-auto w-full rounded-lg transition-transform duration-300 hover:scale-110"
               src="./assets/gallery/3.jpg"
-              alt=""
+              alt="Figure contemplative dominant les collines du Nevada"
             />
           </div>
         </div>
@@ -34,21 +34,21 @@ export const Gallery = () => {
             <img
               className="h-auto w-full rounded-lg transition-transform duration-300 hover:scale-110"
               src="./assets/gallery/4.jpg"
-              alt=""
+              alt="Œuvre sacrée sculptée dans la pierre en Thaïlande"
             />
           </div>
           <div className="rounded-lg overflow-hidden">
             <img
               className="h-auto w-full rounded-lg transition-transform duration-300 hover:scale-110"
               src="./assets/gallery/5.jpg"
-              alt=""
+              alt="Figure solitaire se perdant dans l’immensité du désert du Sahara"
             />
           </div>
           <div className="rounded-lg overflow-hidden">
             <img
               className="h-auto w-full rounded-lg transition-transform duration-300 hover:scale-110"
               src="./assets/gallery/6.jpg"
-              alt=""
+              alt="Temple ancestral enveloppé de neige dans le paysage hivernal du Japon"
             />
           </div>
         </div>
@@ -64,14 +64,14 @@ export const Gallery = () => {
             <img
               className="h-auto w-full rounded-lg transition-transform duration-300 hover:scale-110"
               src="./assets/gallery/8.JPG"
-              alt=""
+              alt="Paysage montagneux époustouflant vu d’en haut en Sibérie"
             />
           </div>
           <div className="rounded-lg overflow-hidden">
             <img
               className="h-auto w-full rounded-lg transition-transform duration-300 hover:scale-110"
               src="./assets/gallery/9.jpg"
-              alt=""
+              alt="Moment de sérénité au cœur des vastes steppes mongoles"
             />
           </div>
         </div>
