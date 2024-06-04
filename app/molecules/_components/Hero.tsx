@@ -16,8 +16,22 @@ import { Button } from "@/components/ui/button";
 import Magnetic from "../../atoms/_components/Magnetic";
 import TitleEncrypt from "../../atoms/_components/TitleEncrypt";
 import GlitchAvatar from "../../atoms/_components/GlitchAvatar";
+import { useState, useEffect } from "react";
 
 export const Hero = () => {
+  const [isWizzing, setIsWizzing] = useState(false);
+
+  useEffect(() => {
+    const wizzInterval = setInterval(() => {
+      setIsWizzing(true);
+      setTimeout(() => {
+        setIsWizzing(false);
+      }, 1000); 
+    }, 5000); 
+
+    return () => clearInterval(wizzInterval);
+  }, []);
+
   return (
     <Section className="flex max-md:flex-col items-center gap-6">
       <GlitchAvatar />
@@ -149,7 +163,9 @@ export const Hero = () => {
             </Code>
           </Link>
           . <Code
-              className="inline-flex gap-1"
+              className={`inline-flex gap-1 ${
+                isWizzing ? "animate-wizz" : ""
+              }`}
               title={
                 <>
                   OPEN TO WORK !
@@ -158,8 +174,8 @@ export const Hero = () => {
               description="I am open to opportunities for missions or permanent positions in startups, scaleups, unicorns or other companies. I specialize in creating web interfaces with Figma, front-end and back-end development using Next.js, PostgreSQL, Node.js, TailwindCSS, and TypeScript. I build turnkey websites with customized content management systems or headless CMS like Strapi or WordPress. While I do limited unit testing, I am proficient with Jest and React Testing Library for simple tests. I adapt quickly to new organizations or technologies within a week, provided there is documentation. I use GitHub for team collaboration and version control of my projects."
             ><span className="text-red-600 font-medium">
             
-            [ OPEN TO WORK ! ] ✨
-            </span></Code>
+            [ OPEN TO WORK ! ]
+            </span></Code> ✨
         </p>
         <div className="flex gap-4">
           <Magnetic>

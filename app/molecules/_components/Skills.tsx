@@ -31,7 +31,7 @@ export const Skills = () => {
                   <SiJavascript className="inline" /> Javascript
                 </>
               }
-              description="blabla"
+              description="JavaScript is a versatile language essential for web development, enabling dynamic sites. Despite its instability and lack of types, coupled with TypeScript, it becomes as robust as titanium."
             >
               <SiJavascript className="inline" />
               Javascript
@@ -66,7 +66,7 @@ export const Skills = () => {
                   <SiTailwindcss className="inline" /> Tailwind Css
                 </>
               }
-              description="blabla"
+              description="Tailwind CSS is a utility-first CSS framework. It enhances workflow efficiency and allows developers to quickly build responsive, customizable designs."
             >
               <SiTailwindcss className="inline" />
               Tailwind Css
