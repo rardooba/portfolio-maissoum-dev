@@ -1,5 +1,6 @@
 "use client"
 /* eslint-disable @next/next/no-img-element */
+import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Section } from "../../organisms/_components/Section";
 import { Box, MessageCircle, Rss, StickyNote, Code, Flame, ChefHat, Image} from "lucide-react";
@@ -9,8 +10,20 @@ import {
 } from "../../atoms/_components/SideProject";
 // import { ContactCard } from "../../atoms/_components/ContactCard";
 import { Work, WorkProps } from "../../atoms/_components/Work";
+import { Pagination } from "@/app/atoms/_components/Pagination";
 
 export const ProjectSection = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const worksPerPage = 2;
+
+  const indexOfLastWork = currentPage * worksPerPage;
+  const indexOfFirstWork = indexOfLastWork - worksPerPage;
+  const currentWorks = WORKS.slice(
+    indexOfFirstWork,
+    indexOfLastWork
+  );
+
+  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
   return (
     <Section className="flex flex-col max-md:flex-col items-start gap-6">
       <div className="flex-[3] w-full">
@@ -35,10 +48,16 @@ export const ProjectSection = () => {
         <Card className="p-4 flex-1">
           <p className="text-lg text-muted-foreground uppercase">Works.</p>
           <div className="flex flex-col gap-4">
-            {WORKS.map((work, index) => (
+            {currentWorks.map((work, index) => (
               <Work key={index} {...work} />
             ))}
           </div>
+          <Pagination
+            itemsPerPage={worksPerPage}
+            totalItems={WORKS.length}
+            paginate={paginate}
+            currentPage={currentPage}
+          />
         </Card>
         {/* <Card className="p-4 flex-1 flex flex-col gap-2">
           <p className="text-lg text-muted-foreground uppercase">Contact me.</p>
@@ -61,6 +80,8 @@ export const ProjectSection = () => {
     </Section>
   );
 };
+
+
 
 const SIDE_PROJECTS: SideProjectProps[] = [
   {
@@ -140,5 +161,14 @@ const WORKS: WorkProps[] = [
     role: "Webdesigner",
     date: "2012 - 2013",
     url: "https://arttocode.fr/miniplanes",
+  },
+  {
+    image:
+      "./assets/clients/inextcom.jpg",
+    title: "Inextcom",
+    role: "Webdesigner & Joomla integrator",
+    date: "2010 - 2011",
+    url: "https://www.societe.com/societe/inextcom-501436232.html",
+    freelance: true,
   },
 ];

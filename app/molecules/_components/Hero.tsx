@@ -40,7 +40,8 @@ export const Hero = () => {
           🦄 <TitleEncrypt />
         </h2>
 
-        <h3 className="text-3xl font-caption">Craftman Software & artist</h3>
+        <h3 className="text-3xl font-caption">Digital Craftsman</h3>
+        <h4 className="text-sm text-muted-foreground -mt-3">Artist / Developer / Designer</h4>
         <p className="text-base leading-7">
           Based in{" "}
           <Link href="#">
