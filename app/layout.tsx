@@ -11,9 +11,22 @@ const AnekTelugu = Anek_Telugu({
 });
 
 export const metadata: Metadata = {
-  title: "🦄 Maïssoum Aboudrare | Craftman Software",
+  metadataBase: new URL("https://maissoum.dev"),
+  title: {
+    default: "Maissoum Aboudrare | Digital Craftsman |Portfolio",
+    template: '%s | Maissoum Aboudrare | Digital Craftsman | Portfolio',
+  },
   description:
-    "ⵣ Amazigh Ronin Coder ¦¦ ▲Vercel lover ¦¦ Eternal Junior 🍄 Lvl 99",
+    "AMAZIGH Javascript Developer | FRENCH Freelancer | Next.js Gamer | Vercel lover | Eternal Junior, Lvl 99",
+  openGraph: {
+    title: "Maissoum Aboudrare | Digital Craftsman Portfolio",
+    description:
+    "AMAZIGH Javascript Developer | FRENCH Freelancer | Next.js Gamer | Vercel lover | Eternal Junior, Lvl 99",
+    type: "website",
+    locale: "en_US",
+    url: "https://maissoum.dev",
+    siteName: "maissoum"
+  }
 };
 
 export default function RootLayout({

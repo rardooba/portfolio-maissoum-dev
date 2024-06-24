@@ -1,10 +1,7 @@
 "use client";
 import { Badge } from "@/components/ui/badge";
 import { Section } from "../../organisms/_components/Section";
-import Link from "next/link";
-import Magnetic from "../../atoms/_components/Magnetic";
 import { CalcomEmbed } from "./CalcomEmbed";
-//import {Booker} from "@calcom/atoms"
 
 export const CallmeImFamous = () => {
   return (

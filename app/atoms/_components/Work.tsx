@@ -27,12 +27,12 @@ export const Work = (props: WorkProps) => {
       <div className="mr-auto">
         <div className="flex items-center gap-2">
           <p className="text-lg font-semibold">{props.title}</p>
-          {props.freelance && <Badge variant="outline">Mission</Badge>}
+          {props.freelance && <Badge variant="outline">Freelance</Badge>}
         </div>
         <p className="text-xs text-muted-foreground">{props.role}</p>
       </div>
 
-      <p className="text-xs text-end text-muted-foreground">{props.date}</p>
+      {/* <p className="text-xs text-end text-muted-foreground">{props.date}</p> */}
     </Link>
   );
 };

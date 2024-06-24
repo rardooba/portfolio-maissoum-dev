@@ -12,7 +12,7 @@ import { ProgressBarPage } from "./atoms/_components/ProgressBarPage";
 import { Videos } from "./molecules/_components/Videos";
 import { CallmeImFamous } from "./molecules/_components/CallmeImFamous";
 import BackToTop from "./atoms/_components/BackToTop";
-import AudioPlayer from "./atoms/_components/AudioPlayer";
+
 
 export default function Home() {
   return (
